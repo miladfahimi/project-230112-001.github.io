@@ -1,0 +1,91 @@
+
+.card-pricing{
+    --#{$prefix}card-bg: none;
+    transition: $transition-base-lg;
+    // max-width: 322px;
+        
+        &::after{
+            content: 'NEW';
+            position: absolute;
+            font-weight: 700;
+            top:5%;
+            left:-4%;
+            padding:5px 28px;
+            background-color: var(--#{$prefix}primary);
+            color: var(--#{$prefix}white);
+            z-index: 9;
+            transition: $transition-base-lg;
+        }
+    .pricing-hover{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top:32%;
+        left:20%;
+        transition: $transition-base-lg;
+    }
+    @media screen and (min-width: 576px) and (max-width:767px){
+        .pricing-hover{
+            top:22%;
+            left:14%;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width:991px){
+        .pricing-hover{
+            top:26%;
+            left:25%;
+        }
+    }
+    @media screen and (min-width: 992px) and (max-width:1199px){
+        .pricing-hover{
+            top:12%;
+            left:8%;
+        }
+    }
+    @media screen and (min-width: 1200px) and (max-width:1399px){
+        .pricing-hover{
+            top:19%;
+            left:15%;
+        }
+    }
+    .card-body{
+        transition: $transition-base-lg;
+    }
+    
+    &:hover{
+        .card-image::after{
+            border-color: #f6f4f5;
+        }
+        .pricing-hover{
+            opacity: 1;
+            visibility: visible;                      
+        }
+        .card-body{
+            opacity:0;
+            visibility: hidden;
+        }
+        .card-img-top{            
+            background: #ffffff;
+            opacity:.2;
+        }
+        &::after{
+            opacity: 0;
+            visibility: hidden;
+        }
+           
+    }
+    .card-image::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        border: 15px solid transparent;
+        height: 100%;
+        width: 100%;
+        transition: $transition-base-lg;
+    }
+
+}
+
+
+

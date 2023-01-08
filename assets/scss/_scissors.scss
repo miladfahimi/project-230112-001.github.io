@@ -1,0 +1,196 @@
+$white: #ffffff;
+$primary: #bf9456;
+$secondary:#be9355;
+$dark:#212529;
+$gray-200:#9a9a9a;;
+$orange:#a4793b;
+$gray-300:#444444;
+$indigo: #66afe9;
+$purple:#f7f7f7;
+$gray-500:#555555;
+$gray-400:#ccc;
+$gray-700:#ddd;
+$black-100: #0000;
+$black-200: #a7a7a7;
+$black:#000000;
+
+// prefix
+$prefix: bs-;
+
+$font-family-sans-serif: Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$heading-font-base: "Roboto Slab", serif;
+$body-bg-color: $white;
+
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: true;
+$enable-negative-margins: true;
+
+//position
+
+$position : relative; 
+$position-r : $position;
+
+
+// Spacing
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  30: $spacer * 1.875,
+  50: $spacer * 3.125,  
+  55: $spacer * 3.4375,
+  60: $spacer * 3.75,
+  70: $spacer * 4.375,
+  100: $spacer * 6.25,
+  120: $spacer * 7.5,
+  130: $spacer * 8.125,
+  150: $spacer * 9.375,
+  220: $spacer * 13.75,
+);
+
+// body
+$body-color: #777777;
+$body-font-size:1rem;
+$body-font-weight:400;
+
+// Links
+$link-decoration:  none;
+$link-color: #777777;
+
+// Typography
+$font-size-base: 1rem;
+$line-height-base:            1.6;
+
+
+// Fonts
+$headings-font-family: var(--#{$prefix}headings-font-family, $heading-font-base);
+$headings-color: var(--#{$prefix}headings-color, $dark);
+$headings-font-weight: 700;
+ 
+$h1-font-size:                $font-size-base * 5;
+$h2-font-size:                $font-size-base * 2.5;
+$h3-font-size:                $font-size-base * 2.1875;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1.125;
+$h6-font-size:                $font-size-base;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            400; 
+
+// Buttons + Forms
+
+$input-color: var(--#{$prefix}body-color);
+$input-bg: var(--#{$prefix}purple);
+$input-border-color: var(--#{$prefix}input-bg, $black-100);
+$input-btn-border-width: 2px;
+$input-focus-bg: var(--#{$prefix}body-bg);
+$input-btn-focus-width: 0;
+$input-btn-focus-box-shadow: none;
+$input-border-radius:3px;
+$input-box-shadow: none;
+$input-font-size:13px;
+$input-line-height:1.125;
+$input-padding-x:4px;
+$input-padding-y:4px;
+
+
+$input-padding-y: 15px;
+$input-padding-x: 20px;
+
+
+// Buttons
+$btn-padding-y: 1.1rem;
+$btn-padding-x: 2rem; 
+$btn-font-size: 0.75rem; 
+$btn-line-height: 1.2; 
+$btn-border-width: none;
+$btn-font-weight: 700;
+$btn-border-radius: 3px;
+$btn-hover-bg: var(--#{$prefix}btn-hover-bg);
+$btn-bg : var(--#{$prefix}primary);
+
+
+$btn-focus-width: 0;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+
+// Accordion
+$accordion-border-width: 0;
+$accordion-border-color:#ddd;
+$accordion-border-radius: 0px;
+$accordion-icon-color: $black;
+$accordion-icon-active-color: $black;
+$accordion-button-color: $black;
+$accordion-button-active-color: $black;
+
+$accordion-padding-x: 10px;
+$accordion-padding-y: 1rem;
+$accordion-body-padding-x: 0;
+
+$transparent-bg: transparent;
+$accordion-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-focus-border-color: var(--#{$prefix}accordion-border-color);
+$accordion-button-focus-box-shadow: none;
+$accordion-button-color: var(--#{$prefix}heading-color);
+
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.125 10H16.875' stroke='var(--svg-fill-color, #{$accordion-icon-color})' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 3.125V16.875' stroke='#{$accordion-icon-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.625 4.375L4.375 15.625' stroke='#{$accordion-icon-active-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M15.625 15.625L4.375 4.375' stroke='#{$accordion-icon-active-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-icon-white:         url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.125 10H16.875' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 3.125V16.875' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-active-icon-white:  url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.625 4.375L4.375 15.625' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M15.625 15.625L4.375 4.375' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+
+// Cards
+$card-inner-border-radius: 0;
+$card-border-width:0;
+
+// Navbar
+$navbar-padding-y: 0;
+$navbar-brand-padding-y: 0;
+$navbar-nav-link-padding-x: 12.5px;
+$nav-link-padding-y: 1.2rem;
+
+$navbar-light-brand-color: $headings-color;
+$navbar-light-color: $headings-color;
+$nav-link-hover-color: $primary;
+$navbar-color :var(--#{$prefix}white);
+$navbar-hover-color :var(--#{$prefix}primary);
+$navbar-light-hover-color: rgba($black, .7);
+$navbar-light-active-color: var(--#{$prefix}primary);
+$navbar-dark-active-color: var(--#{$prefix}primary);
+$navbar-toggler-font-size:1rem;
+
+
+// DropDown
+$dropdown-padding-y:                0;
+$dropdown-border-radius:            0;
+$dropdown-bg:                       $black;
+$dropdown-color:                   $white;
+$dropdown-link-color:               $white;
+$dropdown-item-padding-y:           .8rem;
+$dropdown-divider-bg:              rgba(255, 255, 255, .1);
+
+// Pagination
+$pagination-hover-bg :var(--#{$prefix}primary);
+$pagination-padding-y: 0.6rem;
+$pagination-hover-color:var(--#{$prefix}white);
+$pagination-hover-border-color :var(--#{$prefix}primary);
+$pagination-active-bg:  var(--#{$prefix}primary);
+$pagination-padding-x: 1.75rem;
+
+$offcanvas-bg-color: var(--#{$prefix}body-bg);
+
+$transition-base-lg:             all .4s ease-in-out;
+$transition-base:             all .5s ease-in-out;
+
+
+$border-color:var(--#{$prefix}gray-400);

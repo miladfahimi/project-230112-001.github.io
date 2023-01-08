@@ -1,0 +1,44 @@
+.card-styller{
+    --#{$prefix}card-bg: none;
+    max-width: 20.625rem;
+    margin: 0 auto;
+    span{
+        color: var(--#{$prefix}gray-200);
+    }
+    .social-btns{
+        position: absolute;
+        top: 0;
+        right: -50px;
+        opacity: 0;
+        visibility: hidden;  
+        transition: $transition-base;
+        a{
+            color:var(--#{$prefix}primary);
+            display: block;
+            border: 1px solid var(--#{$prefix}gray-700);               
+            text-align: center;
+            height: 50px; 
+            line-height: 50px;       
+            width: 50px;
+            transition: $transition-base;
+            &:hover {
+                background-color: var(--#{$prefix}primary);
+                color:var(--#{$prefix}white);
+                border-color: var(--#{$prefix}primary);
+            }
+        }          
+    }
+    &:hover{
+        .social-btns{
+            opacity: 1;
+            visibility: visible;
+            right: 0;            
+        }
+        h5{
+            color:var(--#{$prefix}primary);            
+            span {
+                color: var(--#{$prefix}gray-200);                
+            }
+        }
+    }
+}

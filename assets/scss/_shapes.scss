@@ -1,0 +1,31 @@
+.shape1{
+	background: url("../images/shape2.png") no-repeat scroll center center;   
+}
+.shape{
+	background-color: var(--#{$prefix}primary);
+	height: 1px;
+	width: 40px;
+	margin: 0 auto;
+}
+.shape1 i {
+	font-size: 45px;	
+}
+.shape2 {
+	background:url("../images/shape3.png") no-repeat scroll center center;
+	height: 15px;
+	line-height: 15px;
+	margin: 7px 0 35px;
+	text-align: center;
+}
+.saparator1{
+	background:url("../images/separator1.png") no-repeat scroll left center;
+	height: 3px;
+	line-height: 2px;
+	margin: 14px 0 30px;
+
+}
+.saparator2{
+	background:url("../images/separator2.png") no-repeat;	
+	height: 3px;
+	line-height: 2px;
+}

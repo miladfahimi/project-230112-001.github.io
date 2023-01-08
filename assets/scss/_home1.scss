@@ -1,0 +1,255 @@
+
+.home-1{
+        --#{$prefix}body-bg: var(--#{$prefix}light);
+}
+//---> Service-Section
+.service-section{
+        background: url("../images/service/service-bg.png") no-repeat scroll center bottom;
+}
+.service-icon{
+        height: 70px;
+        width: 70px;
+        flex: 0 0 70px;
+        color: var(--#{$prefix}black);
+        border: 1px solid  var(--#{$prefix}gray-400);
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;  
+        transition: $transition-base;          
+        font-size: 35px;  
+         
+}
+.service-content li:hover .service-icon{
+        color: var(--#{$prefix}white);
+        background-color: var(--#{$prefix}primary);
+        border-color: var(--#{$prefix}primary);
+
+}
+//---> Service-Section
+
+
+//---> About-Section
+.about-content {
+        i{
+                font-size: 40px;
+                color: var(--#{$prefix}primary);
+                transition: $transition-base-lg;
+        }
+        &:hover {
+                .icon-circle-wrap i {
+                background-color: var(--#{$prefix}primary);
+                color: var(--#{$prefix}white);                
+                }
+        }
+        .saparator2{
+                background-position: 0 0;
+                
+        }        
+}
+//---> About-Section
+
+
+//---> CountDown-Section
+.countdown-content {
+
+        position: relative;
+        .large-text{
+                font-size: 60px;
+                font-weight: 700;
+                color: var(--#{$prefix}dark);
+        }       
+        .perch-scissors{
+                font-size: 40px;
+                position: absolute;
+                top: 38%;
+                right: 0;
+        }
+        small{
+                color: var(--#{$prefix}dark); 
+        }
+        @media screen and (max-width: 991px) {
+                .large-text{
+                        font-size: 30px;   
+                }
+                
+        }
+        @media screen and (max-width: 1200px) {
+                .perch-scissors{
+                        opacity: 0;
+                        visibility: hidden;
+                }
+                
+        }
+       
+}
+.countdown-icon i{
+        font-size: 40px;
+        transform: rotate(45deg);
+        color: var(--#{$prefix}primary);
+}
+//---> CountDown-Section
+
+
+
+
+//---> Deals-Section
+.top-deals-saparator{
+        color: var(--#{$prefix}primary);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+}
+
+.deals-section li{
+        font-weight: bold;
+}
+
+.deals-items{
+        max-width: 350px;
+        li{
+                color: var(--#{$prefix}dark);
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                gap: 50px;
+                &:after{
+                        content: "";
+                        position: absolute;
+                        top: 17px;
+                        width: 100%;
+                        height: 1px;
+                        background-image: linear-gradient(to right, var(--#{$prefix}body-color) 2px, transparent 2px);
+                        background-size: 4px;
+                        background-repeat: repeat-x;
+                        z-index: -1;
+                }  
+                span{
+                        position: relative;
+                        overflow: hidden;
+                        background-color: var(--#{$prefix}body-bg);
+                        padding: 0 5px;
+                }
+                
+        }
+}
+//---> Deals-Section
+
+
+//---> Client-Review Section
+.client-review-section{
+        background: url("../images/client/client-say-bg.jpg") no-repeat scroll center center / cover;
+        background-attachment: fixed;
+        h3,p{
+                color: var(--#{$prefix}white);
+        }
+    .client-details{
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    .client-ratings i{
+        color: var(--#{$prefix}primary);
+        font-size: 13px;
+    }
+
+    .clients-name::after{
+                content: "";
+                height: 1px;
+                left: 55px;
+                position: absolute;
+                top: 0;
+                width: 45px;
+                background-color: var(--#{$prefix}primary);
+        }        
+        --swiper-navigation-size:14px:      
+}
+.swiper-btn{
+               
+        .swiper-button-next ,
+        .swiper-button-prev {               
+                font-weight: bold;                                
+                transition: $transition-base-lg;                
+        }
+        .btn-style-1{
+                border: 2px solid var(--#{$prefix}primary);
+                border-radius: 50%;
+                height: 38px;
+                width: 38px;
+                color:var(--#{$prefix}primary);
+                &:hover{
+                        color:var(--#{$prefix}white);
+                        background-color: var(--#{$prefix}primary);
+                }
+        }        
+}
+//---> Client-Review Section
+
+
+//---> Our-Work Section
+.work-details-outer:hover{
+        .work-details{
+                opacity: 1;
+                visibility: visible;
+        }
+        .work-img::after{
+                opacity: 1;
+        }
+
+}
+.work-img{
+        img{
+                width: 100%;
+        }
+}
+.work-img::after {
+        background: hsla(0, 0%, 0%, 0.7) none repeat scroll 0 0;
+        content: "";
+        height: calc(100% - 30px);
+        left: 15px;
+        position: absolute;
+        top: 15px;
+        width: calc(100% - 30px);
+        opacity: 0;
+        transition: $transition-base-lg;
+}
+
+.work-details{
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition-base-lg;
+}
+.work-details-inner{
+        position: absolute;
+        top: 36%;
+        left: 0;
+        padding: 0 20px;
+        h5,p{
+                color:var(--#{$prefix}white);
+        }
+        .saparator2{
+                background-position: center center;
+        }
+        .work-details-icon  {
+                a{
+                        background-color: var(--#{$prefix}primary);
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                }
+                i{
+                        color:var(--#{$prefix}white);
+                        transform: rotate(45deg);
+                        font-size: 16px;
+                }
+ 
+        }
+}
+@media screen and (min-width: 1200px) and (max-width:1500px){
+        .work-details-inner{
+            top:17%;           
+        }
+}

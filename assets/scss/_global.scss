@@ -1,0 +1,98 @@
+
+html{
+    overflow-x: hidden;    
+}
+body{
+    letter-spacing: 1px;   
+}
+
+.title{
+    margin: 0 auto;
+    max-width: 780px;
+    text-align: center;   
+}
+
+h1,h2,h3{
+    font-weight: 700;
+}
+
+.flaticon-mustache-shape,.perch-comb-double ,.perch-mustache-shape3{
+    color: var(--#{$prefix}primary);
+}
+
+// ----> Overlay
+.overlay{
+	position: relative;
+	overflow: hidden;
+}
+.overlay>* {
+    z-index: 2;
+    position: relative;
+}
+.overlay:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+     background-color: rgba(0,0,0, 0.7);
+}
+.white-overlay:before{
+	background-color:rgba(255,255,255, 0.75);
+}
+.text-white{
+    --#{$prefix}headings-color: #{$white};
+}
+
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    left: auto;
+    right: 0;
+    display: none;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
+    transform: rotate(-90deg);
+    background-color: var(--#{$prefix}dark); 
+    &:hover{
+        background-color: var(--#{$prefix}primary); 
+    }
+}
+
+.bg-image{
+    background-size: cover;
+    background-image: var(--#{$prefix}bg-image);
+    background-blend-mode: overlay;
+}
+
+.card-demo{
+    --#{$prefix}card-border-width: 1px;
+    --#{$prefix}card-border-color: rgba(var(--#{$prefix}dark-rgb), .1);
+    transition: $transition-base;
+    a{
+        transition: $transition-base;
+    }
+    .card-body{
+        border-top: 1px solid rgba(var(--#{$prefix}dark-rgb), .1);
+    }
+    --#{$prefix}link-color: var(--#{$prefix}dark);
+    --#{$prefix}link-hover-color: var(--#{$prefix}primary);
+    &:hover,
+    &:focus{
+        box-shadow: $box-shadow;       
+    }
+}
+
+@media screen and (max-width: 992px){
+    img{
+        max-width: 100%;
+        height: auto; 
+    }
+}
