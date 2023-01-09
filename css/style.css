@@ -523,8 +523,12 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 .service-single-block { }
 .service-single-img { }
 .service-single-content { }
+.service-content{
+    display: flex;
+    justify-content: space-between;
+}
 .price{font-size: 24px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif;}
-.price-mld{font-size: 20px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif;}
+.price-mld{ font-size: 20px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif;}
 
 /*-----------------------------------------
     service side-nav
