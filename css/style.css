@@ -292,8 +292,12 @@ label { }
 .cta-block { }
 .cta-title { font-size: 32px; font-weight: 700; letter-spacing: -1px; color: #fff; margin-bottom: 10px; }
 .cta-text { font-size: 18px; color: #a2fed4; }
-.cta-content { }
-.cta-call, .cta-mail { }
+.cta-content {
+    font-size: 28px; font-weight: 700; letter-spacing: -1px; color: #fff; margin-bottom: 10px; text-transform: none;
+ }
+.cta-call, .cta-mail {
+
+}
 
 
 .cta-section {
