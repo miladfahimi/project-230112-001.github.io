@@ -534,7 +534,7 @@ padding: 20px; }
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5px;
-    border-bottom: 1px solid rgb(186, 185, 185);
+    border-bottom: 1px dotted rgb(186, 185, 185);
 }
 .service-content h5:last-child{
     margin-left: auto;
@@ -544,6 +544,12 @@ padding: 20px; }
 .price-fr{ font-size: 16px; color: #000000; font-weight: 300; font-family: 'Montserrat', sans-serif; text-transform: none;}
 .mb-zero{
     margin-bottom: 0;
+}
+.logo-img{
+    font-weight: 700 !important;
+}
+.pt-20{
+    margin: auto;
 }
 /*-----------------------------------------
     service side-nav
