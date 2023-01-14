@@ -449,7 +449,9 @@ label { }
 .page-title { color: #fff;  font-size: 40px; font-weight: 400; letter-spacing: -1px; }
 .breadcrumb { }
 .breadcrumb>.active { }
-.page-breadcrumb {   }
+.page-breadcrumb {
+    position: relative;
+ }
 .page-breadcrumb .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
 
 /*-----------------------------------
