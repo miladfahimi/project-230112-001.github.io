@@ -521,7 +521,7 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 .service-img { margin-bottom: 30px; }
 .service-img img { width: 100%; }
 .service-caption { }
-.service-title { font-size: 20px; color: #212330; text-transform: uppercase; text-align: center; letter-spacing: 1px; }
+.service-title { font-size: 20px; color: #212330; font-weight: 600; text-transform: uppercase; text-align: left; letter-spacing: 1px; padding-bottom: 10px;}
 .service-icon { }
 .service-icon img { }
 .service-single-block { }

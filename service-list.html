@@ -26,8 +26,29 @@
 </head>
 
 <body>
-    <iframe src="./navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
+    <!-- <iframe src="./navbar.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="index.html"><img src="images/logo.png" alt="Hair Salon Website Templates Free Download"></a>
+                </div>
+                <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Hem</a></li>
+                                <li><a href="service-list.html" title="Service List">Prislista</a></li>
+                                <li><a href="service-detail.html" title="Features">Bokatid</a></li>
+                                <li><a href="contact.html" title="Contact Us">Hitta oss</a> </li>
+                                <li><a href="styleguide.html" title="Styleguide">Om oss</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="page-header"><!-- page header -->
         <div class="container">
             <div class="row">
@@ -47,20 +68,8 @@
     </div><!-- /.page header -->
     <iframe src="./price.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-    <div class="space-small bg-primary">
-        <!-- call to action -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-sm-7 col-md-8 col-xs-12">
-                    <h1 class="cta-title">Book your online appointment</h1>
-                    <p class="cta-text"> Call to action button example for booking appointment for patients.</p>
-                </div>
-                <div class="col-lg-4 col-sm-5 col-md-4 col-xs-12">
-                    <a href="service-detail.html" class="btn btn-white btn-lg mt20">Boka tid har</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <iframe src="./callus.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
     <iframe src="./footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
