@@ -520,6 +520,7 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 /* service section */
 
 .service-block {
+    width: 100%;
     display: inline-block;
     margin-bottom: 20px;
     padding: 20px;
@@ -536,7 +537,8 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 .service-single-content { }
 .service-content{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     padding-top: 5px;
     border-bottom: 1px dotted rgb(186, 185, 185);
@@ -545,7 +547,7 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
     margin-left: auto;
 }
 .price{font-size: 24px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif;}
-.price-mld{ font-size: 20px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: none;}
+.price-mld{ font-size: 20px; color: #aa9144; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: none; padding-left: 10px;}
 .price-fr{ font-size: 16px; color: #000000; font-weight: 300; font-family: 'Montserrat', sans-serif; text-transform: none;}
 .mb-zero{
     margin-bottom: 0;
